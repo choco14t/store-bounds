@@ -5,7 +5,7 @@
   "description": "Store the bounds of Inkdrop.",
   "keywords": [
   ],
-  "repository": "https://github.com/inkdropapp/remember-window-size",
+  "repository": "https://github.com/chocol4t/store-bounds.git",
   "license": "MIT",
   "engines": {
     "inkdrop": ">=3.7.3 <4.0.0"
