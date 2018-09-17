@@ -1,15 +1,13 @@
 {
   "name": "store-bounds",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Store the bounds of Inkdrop.",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/chocol4t/store-bounds.git",
   "license": "MIT",
   "engines": {
     "inkdrop": ">=3.7.3 <4.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
