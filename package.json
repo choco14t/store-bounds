@@ -3,11 +3,22 @@
   "main": "./lib/main",
   "version": "0.1.1",
   "description": "Store the bounds of Inkdrop.",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
   "keywords": [],
   "repository": "https://github.com/chocol4t/store-bounds.git",
   "license": "MIT",
   "engines": {
     "inkdrop": ">=3.7.3 <4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.11.3",
+    "typescript": "^3.1.1"
+  }
 }
