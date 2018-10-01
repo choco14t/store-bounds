@@ -1,5 +1,6 @@
 import * as path from 'path';
 import * as fs from 'fs';
+import {screen} from 'electron';
 
 declare const inkdrop: any;
 declare const app: any;
@@ -15,6 +16,16 @@ const restoreBounds = () => {
     windowInfo = {x: 0, y: 0, width: 800, height: 1000};
   }
 
+  const primaryScreenBounds = screen.getPrimaryDisplay().bounds;
+  if (windowInfo.width > primaryScreenBounds.width) {
+    windowInfo.width = primaryScreenBounds.width;
+  }
+
+  if (windowInfo.height > primaryScreenBounds.height) {
+    windowInfo.height = primaryScreenBounds.height;
+  }
+
+  console.log(windowInfo);
   inkdrop.window.setBounds(windowInfo);
 };
 
