@@ -1,6 +1,5 @@
 import * as path from 'path';
 import * as fs from 'fs';
-import * as _ from 'lodash';
 
 declare const inkdrop: any;
 declare const app: any;
@@ -12,9 +11,6 @@ const restoreBounds = () => {
 
   try {
     windowInfo = JSON.parse(fs.readFileSync(filePath, {encoding: 'utf8'}));
-    if (_.isEqual(windowInfo, inkdrop.window.getBounds())) {
-      return;
-    }
   } catch (e) {
     windowInfo = {x: 0, y: 0, width: 800, height: 1000};
   }
