@@ -35,6 +35,8 @@ const init = () => {
   inkdrop.window.removeListener('maximize', init);
 };
 
+screen.on('display-added', restoreBounds);
+
 inkdrop.window.on('maximize', init);
 
 inkdrop.window.on('close', () => {
