@@ -16,4 +16,4 @@ New feature is below.
 * Restore bounds when monitor added
 
 ## 0.3.0
-* Applied Inkdrop v4
+* Support for Inkdrop v4
