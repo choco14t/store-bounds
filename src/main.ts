@@ -3,9 +3,9 @@ import * as fs from 'fs';
 import {screen} from 'electron';
 
 declare const inkdrop: any;
-declare const app: any;
 
-const filePath = path.join(app.getPath('userData'), 'window-info.json');
+const configPath = inkdrop.packages.config.configDirPath;
+const filePath = path.join(configPath, 'window-info.json');
 
 const restoreBounds = () => {
   let windowInfo;
@@ -25,7 +25,6 @@ const restoreBounds = () => {
     windowInfo.height = primaryScreenBounds.height;
   }
 
-  console.log(windowInfo);
   inkdrop.window.setBounds(windowInfo);
 };
 
